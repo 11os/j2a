@@ -17,7 +17,7 @@ const ClazzItem: React.FC<ClazzProps> = ({ result, ast, clazzName }) => {
       {/* params */}
       {params.map((ele: ParamInfo, idx: number) => <div key={ele.key + idx} >  <span className="blue">{ele.key}</span>: <span className="green">{ele.type}</span>;{ele.comment && <span className="red"> // {ele.comment}</span>}</div>)}
       {/* define */}
-      <span className="white">&rbrace;</span>
+      <span className="white">{"}"}</span>
       <br />
       {loop && loop.map((ele: LoopInfo, index: number) => <ClazzItem key={index} ast={ele.node} clazzName={ele.clazz} />)}
       <style jsx>{`

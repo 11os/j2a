@@ -46,7 +46,7 @@ export  interface BaseResponse {
   doubleValue: number;
   message: any; // ⚠️⚠️⚠️ contact ur backend developer plz
   : string; // ⚠️⚠️⚠️ name it
-  auth: bool;
+  auth: boolean;
   pageInfo: PageInfo;
   enum: string[];
   data: Data[];
@@ -59,7 +59,7 @@ export  interface Data {
   id: string;
   title: string;
   price: number;
-  hasBuy: bool;
+  hasBuy: boolean;
   studentNum: number;
 }
 ```

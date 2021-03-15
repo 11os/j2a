@@ -11,7 +11,7 @@ function parseLiteral(type?: NodeTypes) {
   return type
     ? {
         [NodeTypes.NullLiteral]: "any",
-        [NodeTypes.BooleanLiteral]: "bool",
+        [NodeTypes.BooleanLiteral]: "boolean",
         [NodeTypes.StringLiteral]: "string",
         [NodeTypes.NumericLiteral]: "number",
         [NodeTypes.Daddy]: "",
